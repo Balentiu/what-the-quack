@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ynmcc4l1cqbb" path="res://assets/bandana_red.png" id="3_dqkch"]
 [ext_resource type="Texture2D" uid="uid://dp7r84krqctcf" path="res://assets/left_foot.png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://3rflm5s1ks5v" path="res://assets/duck_nolegs.png" id="4_fjrip"]
+[ext_resource type="PackedScene" uid="uid://cs0ae7fr08h56" path="res://scenes/weapon.tscn" id="7_fjrip"]
 
 [sub_resource type="Curve" id="Curve_tuyoq"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -54,3 +55,6 @@ shape = SubResource("CircleShape2D_0eb53")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1522541215]
 position_smoothing_enabled = true
+
+[node name="Weapon" parent="." unique_id=1477185028 instance=ExtResource("7_fjrip")]
+position = Vector2(0, 37)

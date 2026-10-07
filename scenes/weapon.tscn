@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cs0ae7fr08h56"]
+
+[ext_resource type="Script" uid="uid://dfx8t1s82ywhn" path="res://scripts/weapon.gd" id="1_uxn4k"]
+[ext_resource type="PackedScene" uid="uid://b4xjopahwgj2m" path="res://scenes/projectile.tscn" id="2_8fp1k"]
+[ext_resource type="Texture2D" uid="uid://ynmcc4l1cqbb" path="res://assets/bandana_red.png" id="2_bmw2d"]
+
+[node name="Weapon" type="Node2D" unique_id=1477185028]
+script = ExtResource("1_uxn4k")
+projectile_scene = ExtResource("2_8fp1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=270758565]
+position = Vector2(60, 0)
+texture = ExtResource("2_bmw2d")
+
+[node name="Muzzle" type="Marker2D" parent="Sprite2D" unique_id=1189714049]
+position = Vector2(20, -41)
+
+[node name="Timer" type="Timer" parent="." unique_id=417994965]
+wait_time = 0.8
+autostart = true

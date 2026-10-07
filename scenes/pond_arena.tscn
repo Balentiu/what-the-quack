@@ -2,10 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://cbqn38id7l8ch" path="res://assets/water.jpg" id="1_hi5ja"]
 [ext_resource type="PackedScene" uid="uid://bmmbthok6jw6c" path="res://scenes/player.tscn" id="1_la2p1"]
+[ext_resource type="PackedScene" uid="uid://dvjxcgny3hqy1" path="res://scenes/enemy_spawner.tscn" id="2_jfkrj"]
 
 [node name="PondArena" type="Node2D" unique_id=1354731392]
 
 [node name="WaterBackground" type="Sprite2D" parent="." unique_id=644411971]
 texture = ExtResource("1_hi5ja")
+
+[node name="EnemySpawner" parent="." unique_id=1452660593 instance=ExtResource("2_jfkrj")]
 
 [node name="Player" parent="." unique_id=65888630 instance=ExtResource("1_la2p1")]
